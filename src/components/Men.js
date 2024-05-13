@@ -171,7 +171,7 @@ export default function Men({ handleAddToCart }) {
   const [currentItem2, setCurrentItem2] = useState(1);
 
   useEffect(() => {
-    axios.get('http://localhost:8080/menProductsApp')
+    axios.get('https://fashionstorebackend-vsw0.onrender.com/menProductsApp')
       .then(response => {
         setProducts(response.data);
       })
