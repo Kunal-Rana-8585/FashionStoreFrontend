@@ -10,7 +10,7 @@ export default function Women2({ handleAddToCart }){
 
   useEffect(() => {
     // Fetch data from your backend API when the component mounts
-    axios.get('http://localhost:8080/womenProductsApp') // Replace with your backend API URL
+    axios.get('https://fashionstorebackend-vsw0.onrender.com/womenProductsApp') // Replace with your backend API URL
       .then(response => {
         setProducts(response.data);
       })
