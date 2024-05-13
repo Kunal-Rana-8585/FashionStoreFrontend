@@ -20,7 +20,7 @@ export default function Contact({ userdetails }) {
 
     // Use Axios to send the form data to the server
     try {
-      const response = await axios.post('http://localhost:8080/contactApp', {
+      const response = await axios.post('https://fashionstorebackend-vsw0.onrender.com/contactApp', {
         name,
         email,
         phoneNumber,
