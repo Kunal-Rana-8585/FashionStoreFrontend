@@ -31,7 +31,7 @@ export default function Login({handleSignIn}) {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:8080/signup', {
+      const response = await axios.post('https://fashionstorebackend-vsw0.onrender.com/signup', {
         firstName: userData.firstName,
         lastName: userData.lastName,
         email: userData.email,
@@ -50,7 +50,7 @@ export default function Login({handleSignIn}) {
     e.preventDefault();
   
     try {
-      const response = await axios.post('http://localhost:8080/login', {
+      const response = await axios.post('https://fashionstorebackend-vsw0.onrender.com/login', {
         email: userData.email,
         password: userData.password,
       });
