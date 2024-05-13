@@ -9,7 +9,7 @@ const BlogComponent = ({user}) => {
   
 
   useEffect(() => {
-    axios.get('http://localhost:8080/blogsComp')
+    axios.get('https://fashionstorebackend-vsw0.onrender.com/blogsComp')
       .then(response => setBlogs(response.data))
       .catch(error => console.error('Error fetching blogs:', error));
   }, []);
@@ -20,7 +20,7 @@ const BlogComponent = ({user}) => {
   };
 
   const handleAddBlog = () => {
-    axios.post('http://localhost:8080/blogsComp', newBlog)
+    axios.post('https://fashionstorebackend-vsw0.onrender.com/blogsComp', newBlog)
       .then(response => {
         setBlogs([...blogs, response.data]);
         setNewBlog({ title: '', content: '', author: '' });
