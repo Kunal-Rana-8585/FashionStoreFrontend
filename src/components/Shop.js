@@ -13,7 +13,7 @@ export default function Shop({ handleAddToCart }){
 
   useEffect(() => {
     // Fetch data from your backend API when the component mounts
-    axios.get('http://localhost:8080/allProductsApp') // Replace with your backend API URL
+    axios.get('https://fashionstorebackend-vsw0.onrender.com/allProductsApp') // Replace with your backend API URL
       .then(response => {
         setProducts(response.data);
       })
